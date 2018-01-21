@@ -1,4 +1,9 @@
 @import "common.less";
+.clearStyle() {
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     height: 100%;
@@ -7,7 +12,7 @@ body {
 body {
     width: 100%;
     padding: 45px 0 50px 0;
-    background: rgba(19, 236, 226, 0.336);
+    background: #fff;
     position: relative;
 }
 
@@ -28,12 +33,15 @@ body {
         font-weight: normal;
         font-size: 20px;
         margin: 0;
+       a{
+           color:#fff;
         span {
             position: absolute;
             right: 12px;
             top: 10px;
             font-size: 22px;
         }
+       }
     }
 }
 
@@ -43,21 +51,80 @@ body {
 .lt_container {
     position: relative;
     height: 100%;
-    /*  轮播图  */
     .lt_main {
-        background: orange;
         padding: 0 10px;
         overflow: hidden;
         /*  导航 - */
-        .lt_nav{
-            margin: 10px 0;
-            a{
+        .lt_nav {
+            margin-top: 10px;
+            border-bottom-color: 1px solid #000;
+            a {
                 float: left;
                 width: 100%/3;
             }
         }
         /*   广告 - */
+        .lt_adv {
+            margin-bottom: 6px;
+            .lt_adv_left {
+                width: 67.1%;
+                >img {
+                    width: 50%;
+                    float: left;
+                }
+            }
+            .lt_adv_right {
+                width: 32.9%;
+            }
+        }
         /*  产品 - */
+        /* 品牌专区 */
+        .lt_brand {
+            a {
+                float: left;
+                width: 25%;
+            }
+        }
+        /* 运动专区 */
+        .lt_sport {
+            .clearStyle {
+                .clearStyle();
+                li {
+                    float: left;
+                    width: 50%;
+                    padding: 3px;
+                    .line {
+                        padding: 0 12px 8px;
+                        border: 1px solid #ddd;
+                        text-align: center;
+                        box-shadow: 0 0 3px 1px #ddd;
+                        .txt {
+                            height: 40px;
+                            overflow: hidden;
+                            font-size: 14px;
+                        }
+                        p {
+                            font-size: 16px;
+                            color: #666;
+                            margin-top: 10px;
+                            .new_price {
+                                color: red;
+                            }
+                            .old_price {
+                                text-decoration: line-through;
+                            }
+                        }
+                        a {
+                            background: #006699;
+                            color: #fff;
+                            padding: 6px;
+                            font-size: 14px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -67,7 +134,7 @@ body {
 .lt_footer {
     text-align: center;
     height: 50px;
-    background: red;
+    background: #006699;
     position: fixed;
     width: 100%;
     bottom: 0;

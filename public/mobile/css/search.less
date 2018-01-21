@@ -1,0 +1,145 @@
+@import "common.less";
+.clearStyle() {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    padding: 45px 0 50px 0;
+    background: #fff;
+    position: relative;
+}
+
+
+/* 头部 */
+
+.lt_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    h3 {
+        height: 45px;
+        line-height: 45px;
+        background: #006699;
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        margin: 0;
+        a {
+            color: #fff;
+            position: absolute;
+            left: 12px;
+            font-size: 22px;
+        }
+    }
+}
+   
+.lt_search_content {
+    width: 100%;
+    padding: 0 20px;
+    form {
+        border: 1px solid #006699;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        .searchTxt {
+            height: 28px;
+            float: left;
+            width: 80%;
+            border: none;
+            border-radius: 0;
+            .clearStyle();
+            font-size: 14px;
+            text-indent: 12px;
+        }
+        .searchBtn {
+            float: left;
+            height: 28px;
+            border: none;
+            background: #006699;
+            width: 20%;
+            border-radius: 0;
+            .clearStyle();
+            color: #fff;
+        }
+    }
+    .lt_history_list{
+        font-size: 12px;
+        color:#666;
+        margin-top: 30px;
+        .his_info{}
+       .his_record{
+            // display: none;
+        .his_tool{
+           >span{
+               float: left;
+           }
+           a{
+               float: right;
+               font-size: 12px;
+               color:#666;
+               >span{
+                   font-size: 22px;
+               }
+           }
+       }
+       ul{
+            .clearStyle();
+           li{
+               border: 1px solid #ccc;
+              border-bottom:none;
+              height: 20px;
+                   padding-right: 10px;
+               a{
+                   color:#666;
+                    >span{
+                        float: right;
+                        font-size: 18px;
+                    }
+               }
+           }
+           li:last-child{
+               border-bottom: 1px solid #ccc;
+           }
+       }
+       }
+    }
+}
+
+
+/* 底部 */
+
+.lt_footer {
+    text-align: center;
+    height: 50px;
+    background: #006699;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    a {
+        float: left;
+        width: 25%;
+        color: #fff;
+        font-size: 20px;
+        padding: 5px 0;
+        >p {
+            color: #fff;
+        }
+    }
+    a:first-child {
+        color: orange;
+        >p {
+            color: orange;
+        }
+    }
+}

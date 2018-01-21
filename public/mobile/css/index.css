@@ -2,6 +2,9 @@ img {
   display: block;
   width: 100%;
 }
+ul li {
+  list-style: none;
+}
 html,
 body {
   height: 100%;
@@ -9,7 +12,7 @@ body {
 body {
   width: 100%;
   padding: 45px 0 50px 0;
-  background: rgba(19, 236, 226, 0.336);
+  background: #fff;
   position: relative;
 }
 /* 头部 */
@@ -29,7 +32,10 @@ body {
   font-size: 20px;
   margin: 0;
 }
-.lt_header h3 span {
+.lt_header h3 a {
+  color: #fff;
+}
+.lt_header h3 a span {
   position: absolute;
   right: 12px;
   top: 10px;
@@ -39,28 +45,84 @@ body {
 .lt_container {
   position: relative;
   height: 100%;
-  /*  轮播图  */
 }
 .lt_container .lt_main {
-  background: orange;
   padding: 0 10px;
   overflow: hidden;
   /*  导航 - */
   /*   广告 - */
   /*  产品 - */
+  /* 品牌专区 */
+  /* 运动专区 */
 }
 .lt_container .lt_main .lt_nav {
-  margin: 10px 0;
+  margin-top: 10px;
+  border-bottom-color: 1px solid #000;
 }
 .lt_container .lt_main .lt_nav a {
   float: left;
   width: 33.33333333%;
 }
+.lt_container .lt_main .lt_adv {
+  margin-bottom: 6px;
+}
+.lt_container .lt_main .lt_adv .lt_adv_left {
+  width: 67.1%;
+}
+.lt_container .lt_main .lt_adv .lt_adv_left > img {
+  width: 50%;
+  float: left;
+}
+.lt_container .lt_main .lt_adv .lt_adv_right {
+  width: 32.9%;
+}
+.lt_container .lt_main .lt_brand a {
+  float: left;
+  width: 25%;
+}
+.lt_container .lt_main .lt_sport .clearStyle {
+  margin: 0;
+  padding: 0;
+}
+.lt_container .lt_main .lt_sport .clearStyle li {
+  float: left;
+  width: 50%;
+  padding: 3px;
+}
+.lt_container .lt_main .lt_sport .clearStyle li .line {
+  padding: 0 12px 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 0 3px 1px #ddd;
+}
+.lt_container .lt_main .lt_sport .clearStyle li .line .txt {
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.lt_container .lt_main .lt_sport .clearStyle li .line p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+.lt_container .lt_main .lt_sport .clearStyle li .line p .new_price {
+  color: red;
+}
+.lt_container .lt_main .lt_sport .clearStyle li .line p .old_price {
+  text-decoration: line-through;
+}
+.lt_container .lt_main .lt_sport .clearStyle li .line a {
+  background: #006699;
+  color: #fff;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 5px;
+}
 /* 底部 */
 .lt_footer {
   text-align: center;
   height: 50px;
-  background: red;
+  background: #006699;
   position: fixed;
   width: 100%;
   bottom: 0;
