@@ -1,0 +1,85 @@
+@import "common.less";
+html,
+body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    padding: 45px 0 50px 0;
+    background: rgba(19, 236, 226, 0.336);
+    position: relative;
+}
+
+
+/* 头部 */
+
+.lt_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    h3 {
+        height: 45px;
+        line-height: 45px;
+        background: #006699;
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        margin: 0;
+        span {
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            font-size: 22px;
+        }
+    }
+}
+
+
+/* 内容 */
+
+.lt_container {
+    position: relative;
+    height: 100%;
+    /*  轮播图  */
+    .lt_main {
+        background: orange;
+        padding: 0 10px;
+        overflow: hidden;
+        /*  导航 - */
+        .lt_nav{
+            margin: 10px 0;
+            a{
+                float: left;
+                width: 100%/3;
+            }
+        }
+        /*   广告 - */
+        /*  产品 - */
+    }
+}
+
+
+/* 底部 */
+
+.lt_footer {
+    text-align: center;
+    height: 50px;
+    background: red;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    a {
+        float: left;
+        width: 25%;
+        color: #fff;
+        font-size: 20px;
+        padding: 5px 0;
+        >p {
+            color: #fff;
+        }
+    }
+}
